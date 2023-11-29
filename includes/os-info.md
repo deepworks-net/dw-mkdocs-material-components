@@ -1,11 +1,7 @@
-{#
-    Macro that retrieves the 'OS' Block
-    TODO: Document
-#}
-{% macro get_os_block(type='TIP',title='This is my title',description='Insert Description Here') %}
-??? {{ type }} "{{ title }}"
+{% import 'core.md' as $ %}
 
-    {{ description }}
+{% macro get_os_block(type='TIP',title='This is my title',description='Insert Description Here') %}
+{% $.get_block(type=type, title=title, description=description) %}
 {% endmacro %}
 
 {#
@@ -20,17 +16,17 @@
 {% endmacro %}
 
 {#  
-   Import All OS Info Macros
+   Include All OS Info Macros
 #}
 {# 
     AlmaLinux Support for AlmaLinux 8.7
 #}
-{% import 'almalinux.md' %}
+{% import 'almalinux.md' as almalinux %}
 {# 
     CentOS Support for CentOS 7.9, 8.5, and Stream
 #}
-{% import 'centos.md' %}
+{% import 'centos.md' as centos  %}
 {# 
     Oracle Support for Oracle 8.7
 #}
-{% import 'centos.md' %}
+{% import 'oracle.md' as oracle %}
