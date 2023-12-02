@@ -1,0 +1,9 @@
+.git/
+.venv/
+CHANGELOG.md
+LICENSE.md
+docker-compose.yml
+mkdocs.yml
+README.md
+requirements.txt
+.gitignore

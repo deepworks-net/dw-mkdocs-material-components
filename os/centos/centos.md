@@ -1,3 +1,4 @@
+{% extends 'base.md'%}
 
 {% macro get_os_centos_7() %}{{ get_os_block('WARNING','CentOS 7.9 - Approaching EOL','On June 30, 2024, CentOS 7 will reach \'End of Life\', meaning it will be no longer supported. **DO NOT** use this distribution in production for any new machines! Begin retiring and rebuilding those that utilize it.') }}{% endmacro %}
 

@@ -1,0 +1,60 @@
+site_name: DeepWork MkDocs Material Components
+site_description: DeepWork MkDocs Material Components - Covers all the components and how to utilize them
+site_author: Deepworks
+copyright: Deepworks 2023
+docs_dir: docs
+site_dir: site
+extra:
+    version: 0.1.0
+plugins:
+  - search
+  - simple:
+      include_folders: ["includes/**"]
+  - macros:
+      include_dir: includes
+  - tags
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+theme:
+    name: material
+    features:
+        - navigation.instant
+        - navigation.tracking
+        - navigation.tabs
+        #- navigation.tabs.sticky
+        - navigation.indexes
+        - navigation.top
+        - content.tabs
+        - content.tabs.link
+        - content.code.copy
+        - search.suggest
+        - search.highlight
+        - search.share
+    palette:
+      # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black 
+      accent: blue
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black 
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+nav:
+  - "Home": "index.md"
+  - "Macros":
+    - "Core Macros": "includes/core.md"
