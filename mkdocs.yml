@@ -31,6 +31,7 @@ theme:
         #- navigation.tabs.sticky
         - navigation.indexes
         - navigation.top
+        #- toc.integrate
         - content.tabs
         - content.tabs.link
         - content.code.copy

@@ -1,4 +1,4 @@
-{#
+{### DOCUMENTATION HEADER
 /**md 
 {% import 'core.inc' as core %}
 # Core Macros
@@ -15,10 +15,10 @@ These core macros are meant to simplify using Material Markdown features into re
 **/
 #}
 
-{### Admonition
-/**md 
-## create_admonition
-### Creating Admonitions
+{### Admonitions
+/**md
+## core.create_admonition()
+### Creating Admonitions 
 You can easily create an admonition in your template programmatically by calling the `create_admonition` Macro.
 
 #### Parameters
@@ -97,8 +97,7 @@ Would result in:
 This Shows off what the RTL inline admonition can do!
 
 It Floats all the way to the Left of the content!
-
-**/
+**/ 
 #}
 {### START_MACRO ###}
 {% macro create_admonition(title=None, type='note', description='Insert Description Here', collapsible=false, startCollapsed=false,inlineRTL=None) %}
