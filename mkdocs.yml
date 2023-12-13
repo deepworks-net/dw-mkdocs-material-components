@@ -9,9 +9,9 @@ extra:
 plugins:
   - search
   - simple:
-      include_folders: ["includes/**"]
+      include_folders: ["material/**"]
   - macros:
-      include_dir: includes
+      include_dir: material
   - tags
 markdown_extensions:
   - admonition
@@ -27,7 +27,7 @@ theme:
     features:
         - navigation.instant
         - navigation.tracking
-        - navigation.tabs
+        #- navigation.tabs
         #- navigation.tabs.sticky
         - navigation.indexes
         - navigation.top
@@ -57,5 +57,6 @@ theme:
         name: Switch to light mode
 nav:
   - "Home": "index.md"
-  - "Macros":
-    - "Core Macros": "includes/core.md"
+  - "Macros": 
+    - "material/index.md"
+    - "material.admonition": "material/admonition.md"
